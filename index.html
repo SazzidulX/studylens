@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyLens - Official Privacy Policy, Terms & Legal Portal</title>
+    <meta name="description" content="Official Privacy Policy, Terms of Service, Google Play Billing, 1-Week Free Trial Terms, and On-Device Local AI Guidelines for StudyLens by Sazzidul Corporation.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+            background-color: #f8fafc;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content-card {
+            background: white;
+            border-radius: 18px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.03);
+            border: 1px solid #e2e8f0;
+        }
+        .pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        @media print {
+            .tab-view { display: block !important; }
+            .sticky-header { position: static !important; }
+            nav { display: none !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased max-w-3xl mx-auto min-h-screen pb-20">
+
+    <!-- STICKY HEADER & APP BRANDING -->
+    <header class="sticky top-0 z-50 bg-[#f8fafc]/95 backdrop-blur-md pt-6 pb-3 px-4 border-b border-slate-200/60 sticky-header">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-800 flex items-center justify-center text-white font-extrabold text-xl shadow-md ring-2 ring-indigo-200">
+                    <i class="fa-solid fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-[24px] sm:text-[27px] font-extrabold text-slate-900 tracking-tight leading-tight">StudyLens</h1>
+                        <span class="bg-indigo-100 text-indigo-700 font-black text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider">Legal Portal</span>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-500 flex items-center gap-1.5 mt-0.5">
+                        <span>Sazzidul Corporation</span>
+                        <span class="inline-block w-1 h-1 rounded-full bg-slate-300"></span>
+                        <span class="text-indigo-600">Verified On-Device Study App</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Header Fast Action -->
+            <a href="mailto:support.sazzidulcorp@gmail.com" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 text-xs font-bold text-slate-700 rounded-xl hover:bg-slate-50 transition shadow-sm">
+                <i class="fa-solid fa-headset text-indigo-600"></i> Support
+            </a>
+        </div>
+
+        <!-- 4-TAB NAVIGATION MENU -->
+        <nav class="bg-slate-200/80 p-1 rounded-2xl flex justify-between items-center w-full shadow-inner border border-slate-300/50 overflow-x-auto gap-1">
+            <button id="tab-privacy-btn" onclick="switchTab('privacy')" class="flex-1 py-2 px-2.5 bg-white shadow-sm rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-900 transition-all duration-200 text-center">
+                <i class="fa-solid fa-shield-halved mr-1 text-emerald-600"></i> Privacy Policy
+            </button>
+            <button id="tab-terms-btn" onclick="switchTab('terms')" class="flex-1 py-2 px-2.5 bg-transparent rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-600 hover:text-slate-900 transition-all duration-200 text-center">
+                <i class="fa-solid fa-file-contract mr-1 text-slate-400"></i> Terms of Service
+            </button>
+            <button id="tab-billing-btn" onclick="switchTab('billing')" class="flex-1 py-2 px-2.5 bg-transparent rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-600 hover:text-slate-900 transition-all duration-200 text-center">
+                <i class="fa-solid fa-crown mr-1 text-amber-500"></i> Free Trial & Billing
+            </button>
+            <button id="tab-ai-btn" onclick="switchTab('ai')" class="flex-1 py-2 px-2.5 bg-transparent rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-600 hover:text-slate-900 transition-all duration-200 text-center">
+                <i class="fa-solid fa-microchip mr-1 text-blue-500"></i> On-Device AI
+            </button>
+        </nav>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="p-4 sm:p-6 mt-1">
+
+        <!-- ==================== 1. PRIVACY POLICY VIEW ==================== -->
+        <div id="privacy-policy-view" class="tab-view animate-fade-in block">
+
+            <!-- HERO SUMMARY CARD -->
+            <div class="bg-gradient-to-br from-indigo-50 via-blue-50 to-emerald-50 rounded-2xl p-6 sm:p-7 mb-6 border border-indigo-100 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-100/90 text-emerald-800 text-xs font-bold mb-3">
+                    <i class="fa-solid fa-lock"></i> 100% Local-First Architecture
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5 tracking-tight">Privacy Policy</h2>
+                <p class="text-indigo-700 text-sm font-semibold mb-4">Official Privacy Commitment for StudyLens</p>
+
+                <div class="flex flex-wrap items-center gap-2 mb-5">
+                    <span class="bg-white/90 text-slate-700 text-[10.5px] font-bold px-3 py-1 rounded-lg border border-slate-200 shadow-2xs">
+                        Effective: November 2026
+                    </span>
+                    <span class="bg-white/90 text-slate-700 text-[10.5px] font-bold px-3 py-1 rounded-lg border border-slate-200 font-mono shadow-2xs">
+                        Package: com.sazzidulcorporation.studylens
+                    </span>
+                </div>
+
+                <!-- 4 CORE PROMISES GRID -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <div class="bg-white px-3 py-2.5 rounded-xl border border-indigo-100 text-center shadow-xs">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-emerald-100 flex items-center justify-center mb-1 text-emerald-600">
+                            <i class="fa-solid fa-database text-xs"></i>
+                        </div>
+                        <p class="text-[11px] font-extrabold text-slate-800">Local Room DB</p>
+                        <p class="text-[10px] text-slate-500">Zero Cloud Upload</p>
+                    </div>
+
+                    <div class="bg-white px-3 py-2.5 rounded-xl border border-indigo-100 text-center shadow-xs">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-blue-100 flex items-center justify-center mb-1 text-blue-600">
+                            <i class="fa-solid fa-camera text-xs"></i>
+                        </div>
+                        <p class="text-[11px] font-extrabold text-slate-800">On-Device OCR</p>
+                        <p class="text-[10px] text-slate-500">Google ML Kit</p>
+                    </div>
+
+                    <div class="bg-white px-3 py-2.5 rounded-xl border border-indigo-100 text-center shadow-xs">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-purple-100 flex items-center justify-center mb-1 text-purple-600">
+                            <i class="fa-solid fa-user-shield text-xs"></i>
+                        </div>
+                        <p class="text-[11px] font-extrabold text-slate-800">No Account</p>
+                        <p class="text-[10px] text-slate-500">Zero Signup Needed</p>
+                    </div>
+
+                    <div class="bg-white px-3 py-2.5 rounded-xl border border-indigo-100 text-center shadow-xs">
+                        <div class="w-8 h-8 mx-auto rounded-full bg-amber-100 flex items-center justify-center mb-1 text-amber-600">
+                            <i class="fa-solid fa-bolt text-xs"></i>
+                        </div>
+                        <p class="text-[11px] font-extrabold text-slate-800">Offline AI</p>
+                        <p class="text-[10px] text-slate-500">No Cloud LLM API</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POLICY SPECIFICATION CARD -->
+            <div class="content-card border-l-4 border-l-emerald-600">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold">
+                        <i class="fa-solid fa-fingerprint text-base"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-slate-900">Application Identity & Metadata</h3>
+                        <p class="text-xs text-slate-500">Standard compliance registry</p>
+                    </div>
+                </div>
+
+                <div class="space-y-2 text-xs text-slate-700 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                    <div class="flex justify-between py-1 border-b border-slate-200">
+                        <span class="font-medium text-slate-500">Publisher & Developer</span>
+                        <span class="font-bold text-slate-900">Sazzidul Corporation</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-200">
+                        <span class="font-medium text-slate-500">Application Name</span>
+                        <span class="font-bold text-slate-900">StudyLens: AI Study Scanner & Notes</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-200">
+                        <span class="font-medium text-slate-500">Android Application ID</span>
+                        <span class="font-bold text-indigo-600 font-mono">com.sazzidulcorporation.studylens</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-slate-200">
+                        <span class="font-medium text-slate-500">Category</span>
+                        <span class="font-bold text-slate-900">Education / Productivity / Document Tools</span>
+                    </div>
+                    <div class="flex justify-between py-1">
+                        <span class="font-medium text-slate-500">Direct Support Email</span>
+                        <span class="font-bold text-indigo-600 font-mono">support.sazzidulcorp@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NUMBERED PRIVACY SECTIONS -->
+            <div class="space-y-4 text-sm text-slate-700">
+
+                <!-- 1. Introduction -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">1</span>
+                        Introduction & Core Philosophy
+                    </h3>
+                    <p class="leading-relaxed mb-3">
+                        Welcome to <strong>StudyLens</strong>, created and managed by <strong>Sazzidul Corporation</strong>. StudyLens is engineered to assist students, teachers, researchers, and lifelong learners in transforming physical books, handwritten study notes, diagrams, and lecture materials into structured revision aids.
+                    </p>
+                    <p class="leading-relaxed bg-emerald-50 text-emerald-900 p-3 rounded-xl border border-emerald-200 font-medium">
+                        <i class="fa-solid fa-circle-check text-emerald-600 mr-1.5"></i>
+                        Our foundation is built upon a <strong>100% on-device architecture</strong>. We believe your notes, ideas, and academic work should remain completely private to your physical device.
+                    </p>
+                </section>
+
+                <!-- 2. Data We DO NOT Collect -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">2</span>
+                        Personal Data We Do NOT Collect
+                    </h3>
+                    <p class="mb-3">Unlike conventional study apps that upload your documents to cloud databases, StudyLens operates under strict non-collection rules:</p>
+                    <ul class="space-y-2 text-slate-600 mb-3">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                            <span><strong>No Account Sign-in:</strong> You do not need an account, password, phone number, or social media login to use any feature of StudyLens.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                            <span><strong>No Remote Document Storage:</strong> Your scanned study notes, camera photos, OCR text extractions, and PDF exports are never transmitted to Sazzidul Corporation servers.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                            <span><strong>No Cloud AI Inference Tracking:</strong> Prompts, summaries, and questions are generated locally on your device without sending text to third-party cloud LLMs.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 3. Device Permissions & How They Are Used -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">3</span>
+                        Device Permissions & Transparent Usage
+                    </h3>
+                    <p class="mb-3.5">StudyLens requests only minimal Android operating system permissions necessary to deliver study functionality:</p>
+
+                    <div class="space-y-3">
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50">
+                            <div class="flex items-center gap-2 font-bold text-slate-900 mb-1 text-xs sm:text-sm">
+                                <i class="fa-solid fa-camera text-indigo-600"></i>
+                                <span>Camera Permission (android.permission.CAMERA)</span>
+                            </div>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Used solely when you capture a photo of a textbook page or study document. The camera stream is fed directly into Google ML Kit Text Recognition running locally inside the phone's memory. Camera data is never saved remotely or broadcast.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50">
+                            <div class="flex items-center gap-2 font-bold text-slate-900 mb-1 text-xs sm:text-sm">
+                                <i class="fa-solid fa-microphone text-blue-600"></i>
+                                <span>Microphone Permission (android.permission.RECORD_AUDIO)</span>
+                            </div>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Used solely for the Speech-to-Text audio note feature. Audio is translated into text on-device using Android's native SpeechRecognizer; raw audio recordings are not stored or transmitted to external servers.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50">
+                            <div class="flex items-center gap-2 font-bold text-slate-900 mb-1 text-xs sm:text-sm">
+                                <i class="fa-solid fa-images text-emerald-600"></i>
+                                <span>Storage & Media Access</span>
+                            </div>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Used strictly when you choose to import an existing photo from your gallery or export high-resolution PDF study notes to your device's Downloads or Documents folder.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Third-Party SDKs & Services -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">4</span>
+                        Third-Party Service Providers
+                    </h3>
+                    <p class="mb-3">StudyLens integrates industry-standard Google SDKs to ensure security and compliance:</p>
+                    <ul class="space-y-2 text-slate-600 text-xs sm:text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-brands fa-google text-indigo-600 mt-1"></i>
+                            <span><strong>Google ML Kit (On-Device):</strong> Powers rapid text recognition directly on CPU/GPU without cloud communication.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-brands fa-google-play text-emerald-600 mt-1"></i>
+                            <span><strong>Google Play Billing Client:</strong> Manages in-app subscriptions and the 1-week free trial securely via Google Play infrastructure.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-rectangle-ad text-amber-500 mt-1"></i>
+                            <span><strong>Google AdMob:</strong> Serves standard rewarded bonus ads for free-tier users. AdMob processes non-identifiable technical signals (such as device model and advertising ID) in compliance with Google Play Developer policies. Pro subscribers receive an ad-free experience.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 5. User Data Control & Deletion -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">5</span>
+                        User Rights, Control & Instant Data Deletion
+                    </h3>
+                    <p class="mb-3">You have 100% sovereignty over your study notes and preferences:</p>
+                    <ul class="list-disc pl-5 space-y-1.5 text-slate-600 mb-3 text-xs sm:text-sm">
+                        <li><strong>In-App Immediate Erasure:</strong> Inside StudyLens Settings, tapping <em>"Delete All Notes & History"</em> permanently wipes your local Room Database (`AppDatabase`) and resets all configuration in real time.</li>
+                        <li><strong>App Uninstallation:</strong> Because StudyLens stores data exclusively in Android's application-sandboxed directory, uninstalling StudyLens from your device automatically and irreversibly removes all local study databases, notes, and temporary OCR caches.</li>
+                    </ul>
+                </section>
+
+                <!-- 6. Children's Privacy -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">6</span>
+                        Children's Privacy Protection (COPPA / FERPA)
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
+                        StudyLens is an educational study tool designed for students of all levels. Because our app collects zero personal identity records, does not request user ages or student school IDs, and does not maintain online databases, we strictly respect and comply with global child protection regulations including COPPA and FERPA standards.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+
+        <!-- ==================== 2. TERMS OF SERVICE VIEW ==================== -->
+        <div id="terms-conditions-view" class="tab-view animate-fade-in hidden">
+
+            <!-- HERO CARD -->
+            <div class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-6 sm:p-7 mb-6 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/30 text-indigo-300 text-xs font-bold mb-3 border border-indigo-400/30">
+                    <i class="fa-solid fa-file-contract"></i> Legal Agreement
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-1.5 tracking-tight">Terms of Service</h2>
+                <p class="text-indigo-200 text-sm font-semibold mb-4">Official Usage Agreement for StudyLens</p>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    By downloading, installing, or accessing StudyLens, you agree to be bound by the terms detailed below. If you do not agree, please do not use the application.
+                </p>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+
+                <!-- 1. License Grant -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">1</span>
+                        License & Scope of Use
+                    </h3>
+                    <p class="leading-relaxed mb-2">
+                        Sazzidul Corporation grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and utilize StudyLens strictly for personal, educational, and academic non-commercial or personal study purposes in compliance with these terms.
+                    </p>
+                </section>
+
+                <!-- 2. Ownership of User Notes -->
+                <section class="content-card border-l-4 border-l-indigo-600">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">2</span>
+                        100% User Content Ownership
+                    </h3>
+                    <p class="leading-relaxed mb-3 text-slate-600">
+                        You retain <strong>complete, unconditional copyright and ownership</strong> over all physical study notes, textbook scans, handwriting samples, audio notes, and documents processed using StudyLens.
+                    </p>
+                    <p class="bg-indigo-50 text-indigo-900 p-3 rounded-xl border border-indigo-100 text-xs sm:text-sm font-medium">
+                        Sazzidul Corporation claims zero intellectual property rights, zero licensing claims, and zero access rights to your study content.
+                    </p>
+                </section>
+
+                <!-- 3. Academic Integrity & Fair Use -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">3</span>
+                        Academic Integrity & Fair Use
+                    </h3>
+                    <p class="leading-relaxed mb-2 text-slate-600">
+                        StudyLens is engineered as a revision companion, active recall engine, and organizational utility. You agree to use the software ethically and in conformance with the intellectual property guidelines of your academic institution and textbook publishers:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-1 text-xs sm:text-sm text-slate-600">
+                        <li>Do not scan or redistribute copyrighted materials where prohibited by law.</li>
+                        <li>Do not utilize automated tools to reverse-engineer or tamper with app binaries.</li>
+                    </ul>
+                </section>
+
+                <!-- 4. Disclaimer of Warranties -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">4</span>
+                        Disclaimer of Pedagogical Warranties
+                    </h3>
+                    <p class="leading-relaxed text-slate-600 text-xs sm:text-sm mb-2">
+                        StudyLens is provided on an <strong>"AS-IS"</strong> and <strong>"AS-AVAILABLE"</strong> basis without warranties of any kind. While our on-device Optical Character Recognition (OCR) and local intelligence algorithms provide high accuracy, handwritten notations or poor lighting may impact OCR fidelity.
+                    </p>
+                    <p class="leading-relaxed text-slate-600 text-xs sm:text-sm">
+                        Students and researchers are advised to verify mathematical formulas, historical dates, and critical definitions against their official educational curriculum or textbooks prior to examination.
+                    </p>
+                </section>
+
+                <!-- 5. Limitation of Liability -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">5</span>
+                        Limitation of Liability
+                    </h3>
+                    <p class="leading-relaxed text-slate-600 text-xs sm:text-sm">
+                        In no event shall Sazzidul Corporation, its directors, developers, or affiliates be liable for any indirect, incidental, or consequential damages resulting from lost study notes due to device hardware failure, accidental user deletion, or OS-level storage resets. Users are encouraged to utilize the app's local JSON backup or PDF export feature regularly.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+
+        <!-- ==================== 3. BILLING & SUBSCRIPTIONS VIEW ==================== -->
+        <div id="billing-view" class="tab-view animate-fade-in hidden">
+
+            <!-- HERO CARD -->
+            <div class="bg-gradient-to-br from-amber-500 via-yellow-600 to-amber-700 text-white rounded-2xl p-6 sm:p-7 mb-6 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-white/20 text-white text-xs font-bold mb-3 border border-white/30 backdrop-blur-xs">
+                    <i class="fa-solid fa-crown"></i> Google Play In-App Subscriptions
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-1.5 tracking-tight">1-Week Free Trial & Billing Policy</h2>
+                <p class="text-amber-100 text-sm font-semibold mb-4">Official In-App Purchases & Trial Terms</p>
+
+                <div class="bg-white/15 p-3.5 rounded-xl border border-white/20 text-xs text-amber-50 leading-relaxed backdrop-blur-xs">
+                    <i class="fa-solid fa-gift mr-1 text-white"></i>
+                    <strong>1-Time Device Offer:</strong> Every user physical device receives a <strong>7-Day 100% Free Trial</strong> for StudyLens Pro, backed by official Google Play Cloud Billing security.
+                </div>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+
+                <!-- 1. 1-Week Free Trial Terms -->
+                <section class="content-card border-l-4 border-l-amber-500">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-amber-100 text-amber-800 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">1</span>
+                        1-Week (7-Day) Free Trial Promotional Terms
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed mb-3">
+                        StudyLens provides new users with a complete <strong>7-day free trial</strong> to evaluate Pro features without upfront commitment:
+                    </p>
+
+                    <div class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-3">
+                        <div class="flex items-start gap-2 bg-amber-50/70 p-3 rounded-xl border border-amber-200">
+                            <i class="fa-solid fa-mobile-screen-button text-amber-600 mt-1"></i>
+                            <div>
+                                <strong class="text-slate-800">One-Time Offer Per Physical Device:</strong>
+                                <p class="text-xs text-slate-600 mt-0.5">The 7-day free trial is bound to the local Android device installation. It is redeemable strictly once per physical device.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2 bg-amber-50/70 p-3 rounded-xl border border-amber-200">
+                            <i class="fa-solid fa-clock-rotate-left text-amber-600 mt-1"></i>
+                            <div>
+                                <strong class="text-slate-800">Automatic Expiration & Transition:</strong>
+                                <p class="text-xs text-slate-600 mt-0.5">After 7 days, the promotional trial automatically terminates. The app reverts to the standard free tier unless the user continues with an active Google Play subscription.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2 bg-amber-50/70 p-3 rounded-xl border border-amber-200">
+                            <i class="fa-solid fa-unlock-keyhole text-amber-600 mt-1"></i>
+                            <div>
+                                <strong class="text-slate-800">All Pro Features Unlocked During Trial:</strong>
+                                <p class="text-xs text-slate-600 mt-0.5">Full ad-free experience, unlimited high-resolution PDF exports, advanced audio text-to-speech, and priority local OCR.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Transparent Pricing Tiers -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-amber-100 text-amber-800 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">2</span>
+                        Transparent Subscription Pricing (INR / ₹)
+                    </h3>
+                    <p class="text-slate-600 mb-3">
+                        StudyLens offers clear subscription tiers billed in Indian Rupees (INR / ₹), with equivalent localized pricing automatically converted by Google Play for international accounts:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+                        <div class="border border-slate-200 rounded-xl p-3.5 bg-slate-50 text-center">
+                            <span class="bg-indigo-100 text-indigo-700 font-bold text-[10px] px-2 py-0.5 rounded-full uppercase">Trial Tier</span>
+                            <h4 class="font-extrabold text-base text-slate-900 mt-1">Weekly Plan</h4>
+                            <p class="text-xs text-emerald-600 font-bold mt-0.5">7 Days 100% Free</p>
+                            <p class="text-xs text-slate-500 mt-1 font-mono">Then ₹29 / week</p>
+                        </div>
+
+                        <div class="border border-indigo-200 rounded-xl p-3.5 bg-indigo-50/50 text-center">
+                            <span class="bg-blue-100 text-blue-700 font-bold text-[10px] px-2 py-0.5 rounded-full uppercase">Flexible</span>
+                            <h4 class="font-extrabold text-base text-slate-900 mt-1">Monthly Plan</h4>
+                            <p class="text-xs text-indigo-600 font-bold mt-0.5">Standard Monthly</p>
+                            <p class="text-xs text-slate-500 mt-1 font-mono">₹99 / month</p>
+                        </div>
+
+                        <div class="border border-amber-200 rounded-xl p-3.5 bg-amber-50/50 text-center">
+                            <span class="bg-amber-100 text-amber-800 font-bold text-[10px] px-2 py-0.5 rounded-full uppercase">Best Value</span>
+                            <h4 class="font-extrabold text-base text-slate-900 mt-1">Yearly Plan</h4>
+                            <p class="text-xs text-amber-700 font-bold mt-0.5">Full Year Unlocked</p>
+                            <p class="text-xs text-slate-500 mt-1 font-mono">₹599 / year (₹49/mo)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Billing Security & Auto-Renewal -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-amber-100 text-amber-800 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">3</span>
+                        Payment Processing & Auto-Renewal
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm mb-3">
+                        All payments are securely handled by Google Play Billing via your registered Google Account (UPI, Cards, NetBanking, or Google Play Balance). Subscriptions automatically renew at the end of each billing cycle unless cancelled at least 24 hours prior to the renewal date.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-xs sm:text-sm">
+                        Sazzidul Corporation never accesses, stores, or sees your financial information or payment instruments.
+                    </p>
+                </section>
+
+                <!-- 4. How to Cancel Anytime -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-amber-100 text-amber-800 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">4</span>
+                        How to Manage or Cancel Your Subscription
+                    </h3>
+                    <p class="text-slate-600 text-xs sm:text-sm mb-3">
+                        You can cancel your subscription or free trial at any time in two simple steps:
+                    </p>
+
+                    <ol class="list-decimal pl-5 space-y-1.5 text-xs sm:text-sm text-slate-600 mb-3">
+                        <li>Open the <strong>Google Play Store</strong> app on your Android device.</li>
+                        <li>Tap your profile icon in the top right &gt; <strong>Payments & subscriptions</strong> &gt; <strong>Subscriptions</strong>.</li>
+                        <li>Select <strong>StudyLens</strong> and tap <strong>Cancel subscription</strong>.</li>
+                    </ol>
+
+                    <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                        Once cancelled, your Pro benefits remain active until the conclusion of your current paid billing period or 7-day trial.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+
+        <!-- ==================== 4. ON-DEVICE LOCAL AI VIEW ==================== -->
+        <div id="ai-policy-view" class="tab-view animate-fade-in hidden">
+
+            <!-- HERO CARD -->
+            <div class="bg-gradient-to-br from-blue-600 via-indigo-700 to-slate-900 text-white rounded-2xl p-6 sm:p-7 mb-6 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-500/30 text-blue-200 text-xs font-bold mb-3 border border-blue-400/30 backdrop-blur-xs">
+                    <i class="fa-solid fa-microchip"></i> Zero Cloud LLM Dependency
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-1.5 tracking-tight">On-Device Local AI Policy</h2>
+                <p class="text-blue-200 text-sm font-semibold mb-4">StudyLens Local Intelligence & Privacy Architecture</p>
+
+                <div class="bg-white/15 p-3.5 rounded-xl border border-white/20 text-xs text-blue-50 leading-relaxed backdrop-blur-xs">
+                    <i class="fa-solid fa-shield-halved mr-1 text-emerald-300"></i>
+                    <strong>Private On-Device Model:</strong> StudyLens AI is trained and indexed entirely on your local study notes stored in your phone's Room database. No external cloud AI API is utilized.
+                </div>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-700">
+
+                <!-- 1. How Local AI Works -->
+                <section class="content-card border-l-4 border-l-blue-600">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-blue-100 text-blue-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">1</span>
+                        Local Data Indexing & Neural Retrieval
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed mb-3 text-xs sm:text-sm">
+                        StudyLens features a proprietary, lightweight on-device natural language engine (`LocalStudyAiEngine`). When you create smart notes, generate summaries, or ask questions:
+                    </p>
+
+                    <div class="space-y-2 text-xs sm:text-sm text-slate-600 mb-3">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-2.5">
+                            <i class="fa-solid fa-microchip text-blue-600 mt-1"></i>
+                            <div>
+                                <strong class="text-slate-900">100% On-Device Compute:</strong>
+                                <p class="text-xs text-slate-600 mt-0.5">Execution occurs entirely on your device's local processor. No internet connection is needed for AI summarization, formula extraction, or flashcard creation.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-2.5">
+                            <i class="fa-solid fa-magnifying-glass text-indigo-600 mt-1"></i>
+                            <div>
+                                <strong class="text-slate-900">Trained & Indexed on Your Room DB:</strong>
+                                <p class="text-xs text-slate-600 mt-0.5">When you ask a study question, the engine scans and indexes your personal local notes library, citing your exact note title and referencing your stored content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Transparency Signature -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-blue-100 text-blue-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">2</span>
+                        Mandatory Local AI Transparency Signature
+                    </h3>
+                    <p class="text-slate-600 text-xs sm:text-sm mb-3">
+                        To guarantee complete transparency and reassure students that no external API has seen their study material, every response generated by StudyLens appends an unalterable signature badge:
+                    </p>
+
+                    <div class="p-4 bg-slate-900 text-slate-200 rounded-xl font-mono text-xs border border-slate-700 shadow-inner">
+                        <p class="text-slate-400">---</p>
+                        <p class="text-emerald-400 font-bold">🔒 StudyLens On-Device Local Intelligence</p>
+                        <p class="text-slate-300 italic">⚡ 100% Private • Trained & Indexed on your Local Notes • Running on your device (No External API)</p>
+                    </div>
+                </section>
+
+                <!-- 3. Pedagogical Disclaimer -->
+                <section class="content-card">
+                    <h3 class="font-bold text-base sm:text-lg text-slate-900 mb-3 flex items-center gap-2">
+                        <span class="bg-blue-100 text-blue-700 w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold">3</span>
+                        Pedagogical Disclaimer & Student Guidance
+                    </h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-2">
+                        The synthesized flashcards, practice exam questions, and summaries are designed as revision memory aids. Students should use StudyLens to supplement—rather than replace—formal course instruction, authorized teacher guidance, and official textbooks.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION (Always Accessible) -->
+        <div id="contact-card" class="content-card border-t-4 border-t-indigo-600 mt-6">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold">
+                    <i class="fa-solid fa-envelope-open-text text-lg"></i>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Developer Contact & Support</h3>
+                    <p class="text-xs text-slate-500">Official legal, privacy & billing inquiries</p>
+                </div>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+                If you have questions regarding this Privacy Policy, your 7-day free trial, or Google Play subscription billing, please reach out to our dedicated support team:
+            </p>
+
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                    <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Official Email Address</p>
+                    <p class="text-sm sm:text-base font-extrabold text-indigo-600 font-mono">support.sazzidulcorp@gmail.com</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="mailto:support.sazzidulcorp@gmail.com" class="px-3.5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition shadow-sm inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-paper-plane"></i> Send Email
+                    </a>
+                    <button onclick="copyEmail()" id="copy-btn" class="px-3 py-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl text-xs font-bold transition shadow-xs inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-400 text-center">
+                Responses are provided by Sazzidul Corporation typically within 24 to 48 business hours.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 px-4 text-xs text-slate-500 border-t border-slate-200/80 mt-10">
+        <div class="flex items-center justify-center gap-2 font-bold text-slate-700 mb-1">
+            <span>StudyLens</span>
+            <span>•</span>
+            <span>Sazzidul Corporation</span>
+        </div>
+        <p class="text-slate-400 text-[11px]">
+            © 2026 Sazzidul Corporation. All rights reserved. Complies with Google Play Developer Policies.
+        </p>
+    </footer>
+
+    <!-- INTERACTIVE TAB SWITCHING JAVASCRIPT -->
+    <script>
+        function switchTab(tab) {
+            const views = {
+                privacy: document.getElementById('privacy-policy-view'),
+                terms: document.getElementById('terms-conditions-view'),
+                billing: document.getElementById('billing-view'),
+                ai: document.getElementById('ai-policy-view')
+            };
+
+            const buttons = {
+                privacy: document.getElementById('tab-privacy-btn'),
+                terms: document.getElementById('tab-terms-btn'),
+                billing: document.getElementById('tab-billing-btn'),
+                ai: document.getElementById('tab-ai-btn')
+            };
+
+            // Hide all views
+            for (const key in views) {
+                if (views[key]) {
+                    views[key].classList.add('hidden');
+                    views[key].classList.remove('block');
+                }
+                if (buttons[key]) {
+                    buttons[key].className = 'flex-1 py-2 px-2.5 bg-transparent rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-600 hover:text-slate-900 transition-all duration-200 text-center';
+                }
+            }
+
+            // Show selected view
+            if (views[tab]) {
+                views[tab].classList.remove('hidden');
+                views[tab].classList.add('block');
+            }
+
+            // Highlight selected button
+            if (buttons[tab]) {
+                buttons[tab].className = 'flex-1 py-2 px-2.5 bg-white shadow-sm rounded-xl whitespace-nowrap font-bold text-[11px] sm:text-[12.5px] text-slate-900 transition-all duration-200 text-center';
+            }
+
+            // Update URL hash
+            const hash = tab === 'ai' ? '#local-ai' : '#' + tab;
+            window.history.replaceState(null, null, hash);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function copyEmail() {
+            const email = "support.sazzidulcorp@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const btn = document.getElementById('copy-btn');
+                const orig = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-check text-emerald-600"></i> Copied!';
+                setTimeout(() => { btn.innerHTML = orig; }, 2000);
+            });
+        }
+
+        // Deep linking via URL hash on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.toLowerCase();
+            if (hash.includes('term') || hash.includes('condition')) {
+                switchTab('terms');
+            } else if (hash.includes('bill') || hash.includes('sub') || hash.includes('trial') || hash.includes('pricing')) {
+                switchTab('billing');
+            } else if (hash.includes('ai') || hash.includes('llm') || hash.includes('model')) {
+                switchTab('ai');
+            } else {
+                switchTab('privacy');
+            }
+        });
+    </script>
+</body>
+</html>
